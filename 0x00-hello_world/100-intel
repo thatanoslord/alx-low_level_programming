@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -S -masl=intel 
+gcc $CFIE -S -masm=intel
