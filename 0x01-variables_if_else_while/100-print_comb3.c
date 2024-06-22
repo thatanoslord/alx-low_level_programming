@@ -7,24 +7,25 @@
  */
 int main(void)
 {
-	int tens, units;
+    int tens, units;
 
-	for (tens = 0; tens <= 8; tens++) /* Loop for tens place (0-8) */
-	{
-		for (units = tens + 1; units <= 9; units++) /* Loop for units place (tens+1 to 9) */
-		{
-			putchar(tens + '0'); /* Print tens place digit */
-			putchar(units + '0'); /* Print units place digit */
+    for (tens = 0; tens <= 8; tens++)
+    {
+        for (units = tens + 1; units <= 9; units++)
+        {
+            putchar(tens + '0');    // Convert tens digit to character and print
+            putchar(units + '0');   // Convert units digit to character and print
 
-			if (tens < 8 || units < 9) /* Ensure no comma after the last pair */
-			{
-				putchar(','); /* Print comma */
-				putchar(' '); /* Print space */
-			}
-		}
-	}
+            if (tens < 8 || units < 9)
+            {
+                putchar(',');       // Print comma
+                putchar(' ');       // Print space
+            }
+        }
+    }
 
-	putchar('\n'); /* Print newline */
+    putchar('\n');  // Print newline at the end
 
-	return (0);
+    return (0);
 }
+
