@@ -1,2 +1,2 @@
-#!/bin/bash
-gcc $CFIE -S -masm=intel
+#!/bin/bashi
+gcc -S -masm=intel £CFILE
