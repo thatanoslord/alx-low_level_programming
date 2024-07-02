@@ -1,8 +1,8 @@
-nclude "main.h"
+#include "main.h"
 /**
- *  * puts2 - prints every other character
- *   * @str: string pointer
- *    */
+* puts2 - prints every other character
+* @str: string pointer
+*/
 
 void puts2(char *str)
 {
