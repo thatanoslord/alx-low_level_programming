@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+/* Function prototype for rot13 */
+char *rot13(char *str);
 /**
  * main - check the code
  *
