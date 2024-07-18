@@ -98,5 +98,5 @@ int main(int argc, char **argv)
 	}
 	fillWith0(res, totalLen);
 
-	return 0;
+	return (0);
 }
