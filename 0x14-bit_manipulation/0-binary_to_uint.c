@@ -4,7 +4,6 @@
 * @b: binary
 * Return: decimal value
 */
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int base = 1, res = 0;
@@ -12,18 +11,15 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 	return (0);
-
 	for (i = 0; b[i]; i++)
 	{
 	if (b[i] != '0' && b[i] != '1')
 	return (0);
 	}
-
 	for (base = 1, i--; i >= 0; i--, base *= 2)
 	{
 	if (b[i] == '1')
 	res += base;
 	}
-	
 	return (res);
 }
