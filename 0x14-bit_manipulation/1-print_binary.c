@@ -6,23 +6,22 @@
 
 void print_binary(unsigned long int n)
 {
-		unsigned long int temp;
-			int i;
+	unsigned long int temp;
+	int i;
 
-				if (n == 0)
-						{
-									printf("0");
-											return;
-												}
+	if (n == 0)
+	{
+	printf("0");
+	return;
+	}
 
-					for (temp = n, i = 0; (temp >>= 1) > 0; i++)
-								;
+	for (temp = n, i = 0; (temp >>= 1) > 0; i++)
 
-						for (; i >= 0; i--)
-								{
-											if ((n >> i) & 1)
-															printf("1");
-													else
-																	printf("0");
-														}
+	for (; i >= 0; i--)
+	{
+	if ((n >> i) & 1)
+	printf("1");
+	else
+														printf("0");
+	}
 }
