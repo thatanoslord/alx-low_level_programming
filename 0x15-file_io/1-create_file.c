@@ -1,6 +1,6 @@
 #include "main.h"
 #include <fcntl.h>
-/*
+/**
 * create_file - creates a file
 * @filename: name of the file
 * @text_content: content of the file
