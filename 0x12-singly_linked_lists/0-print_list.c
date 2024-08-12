@@ -25,6 +25,8 @@ size_t print_list(const list_t *h)
 }
 =======
 #include "lists.h"
+#include <stdio.h>
+
 /**
  * print_list - prints a list
  * @h: list pointer
