@@ -1,10 +1,13 @@
 #include "main.h"
 #include <fcntl.h>
-/*
-* create_file - creates a file
-* @filename: name of the file
-* @text_content: content of the file
-* Return: 1 if success, -1 if fail
+/**
+* create_file - Creates a file with the specified name and content.
+* @filename: A pointer to the name of the file to be created.
+* @text_content: A pointer to the string to write to the file.
+*
+* Return: 1 on success, -1 on failure.
+*	-1 if filename is NULL or if the file cannot be created.
+*	1 if the file is created and written successfully.
 */
 
 int create_file(const char *filename, char *text_content)
